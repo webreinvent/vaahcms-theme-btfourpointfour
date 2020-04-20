@@ -1,0 +1,27 @@
+{
+    "name": "vaahcms/btfourpointfour",
+    "description": "Bootstrap 4.4 theme for vaahcms",
+    "authors": [
+        {
+            "name": "vaah",
+            "email": "support@vaah.dev"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VaahCms\\Themes\\BtFourPointFour\\Providers\\BtFourPointFourServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "VaahCms\\Themes\\BtFourPointFour\\": ""
+        }
+    }
+}
