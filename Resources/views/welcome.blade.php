@@ -11,5 +11,5 @@
 
 @section('content')
 <h1>BtFourPointFour</h1>
-<p>Bootstrap 4.4 theme for vaahcms</p>
+<p>Bootstrap 4.4 theme</p>
 @endsection
