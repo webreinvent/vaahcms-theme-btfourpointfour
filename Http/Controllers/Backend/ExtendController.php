@@ -14,7 +14,10 @@ class ExtendController extends Controller
     //----------------------------------------------------------
     public static function topLeftMenu()
     {
-        $links = [];
+        $links = [
+            'link' => route('btfourpointfour.index'),
+            'label' => 'Bt 4.4'
+        ];
 
         $response['status'] = 'success';
         $response['data'] = $links;
