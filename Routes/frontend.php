@@ -13,7 +13,7 @@
 
 Route::group(
     [
-        'prefix'     => '/',
+        'prefix'     => '/btfourpointfour',
         'middleware' => ['web'],
     ],
     function () {

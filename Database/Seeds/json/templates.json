@@ -1,0 +1,74 @@
+[
+    {
+        "template": {
+            "name": "Default",
+            "file_path": "frontend.default"
+        },
+        "groups": [
+            {
+                "name": "Default",
+                "slug": "default",
+                "fields": [
+                    {
+                        "name": "Call To Action Headline",
+                        "type": {
+                            "slug": "text"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "template": {
+            "name": "Blogs",
+            "file_path": "frontend.blog.listing"
+        },
+        "groups": [
+            {
+                "name": "Default",
+                "slug": "default",
+                "fields": [
+                    {
+                        "name": "Title",
+                        "type": {
+                            "slug": "text"
+                        }
+                    },
+                    {
+                        "name": "Sub Title",
+                        "type": {
+                            "slug": "image-group"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "template": {
+            "name": "Blog",
+            "file_path": "frontend.blog.single"
+        },
+        "groups": [
+            {
+                "name": "Default",
+                "slug": "default",
+                "fields": [
+                    {
+                        "name": "Subscribe - Title",
+                        "type": {
+                            "slug": "text"
+                        }
+                    },
+                    {
+                        "name": "Subscribe - Details",
+                        "type": {
+                            "slug": "textarea"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

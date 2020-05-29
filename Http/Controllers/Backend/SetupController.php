@@ -21,6 +21,17 @@ class SetupController extends Controller
         return $response;
     }
 
+
+    /**
+     * Run when module is deactivate
+     */
+    public static function makeDefault()
+    {
+        $response['status'] = 'success';
+        $response['data'] = [];
+        return $response;
+    }
+
     /**
      * Run when module is activated
      */

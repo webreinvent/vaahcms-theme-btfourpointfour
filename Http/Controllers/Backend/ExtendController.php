@@ -12,7 +12,7 @@ class ExtendController extends Controller
     {
     }
     //----------------------------------------------------------
-    public static function topLeftMenu()
+    public static function sidebarMenu()
     {
         $links = [
             [
@@ -39,6 +39,9 @@ class ExtendController extends Controller
         return $response;
     }
 
+    //----------------------------------------------------------
+
+    //----------------------------------------------------------
     //----------------------------------------------------------
 
 }

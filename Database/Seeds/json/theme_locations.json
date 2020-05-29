@@ -1,0 +1,13 @@
+[
+
+    {
+        "type": "menu",
+        "name": "Top",
+        "excerpt": "Top of every page"
+    },
+    {
+        "type": "menu",
+        "name": "Bottom",
+        "excerpt": "Bottom of every page"
+    }
+]
