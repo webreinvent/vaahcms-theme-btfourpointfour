@@ -21,6 +21,32 @@
     },
     {
         "template": {
+            "name": "Home",
+            "file_path": "frontend.home"
+        },
+        "groups": [
+            {
+                "name": "Default",
+                "slug": "default",
+                "fields": [
+                    {
+                        "name": "Page Title",
+                        "type": {
+                            "slug": "text"
+                        }
+                    },
+                    {
+                        "name": "Page Sub Title",
+                        "type": {
+                            "slug": "text"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "template": {
             "name": "Blogs",
             "file_path": "frontend.blog.listing"
         },

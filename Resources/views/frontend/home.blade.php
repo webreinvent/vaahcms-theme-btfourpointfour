@@ -10,6 +10,9 @@
 @endsection
 
 @section('content')
-<h1>BtFourPointFour - Home</h1>
-<p>This is home page when menu is not created</p>
+
+    <h1 class="my-4">Page Heading
+        <small>Secondary Text</small>
+    </h1>
+
 @endsection

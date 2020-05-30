@@ -1,0 +1,45 @@
+[
+    {
+        "content": {
+            "name": "Blogs",
+            "slug": "blogs",
+            "plural": "Blogs",
+            "plural_slug": "blogs",
+            "singular": "Blog",
+            "singular_slug": "blog",
+            "excerpt": "Simple blog",
+            "is_published": 1,
+            "is_commentable": 1,
+            "content_statuses": [
+                "draft",
+                "published"
+            ]
+        },
+        "groups": [
+            {
+                "name": "Default",
+                "slug": "default",
+                "fields": [
+                    {
+                        "name": "Title",
+                        "type": {
+                            "slug": "text"
+                        }
+                    },
+                    {
+                        "name": "Slug",
+                        "type": {
+                            "slug": "slug"
+                        }
+                    },
+                    {
+                        "name": "Content",
+                        "type": {
+                            "slug": "editor"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]
