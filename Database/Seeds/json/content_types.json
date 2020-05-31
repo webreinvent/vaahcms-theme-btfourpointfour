@@ -33,9 +33,21 @@
                         }
                     },
                     {
+                        "name": "Excerpt",
+                        "type": {
+                            "slug": "textarea"
+                        }
+                    },
+                    {
                         "name": "Content",
                         "type": {
                             "slug": "editor"
+                        }
+                    },
+                    {
+                        "name": "SEO Meta Tags",
+                        "type": {
+                            "slug": "seo-meta-tags"
                         }
                     }
                 ]
