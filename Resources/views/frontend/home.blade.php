@@ -19,6 +19,8 @@
     {!! get_the_content($content->id) !!}
 
 
+    <x-exp></x-exp>
+
     <?php
 
     $args = [
@@ -38,10 +40,14 @@
     ?>
 
 
-    @contents('blogs', '')
+    @foreach($list as $item)
 
-    @content
 
+        {!! get_content_field($item, 'default', 'title') !!}
+
+
+
+    @endforeach
 
 
 
