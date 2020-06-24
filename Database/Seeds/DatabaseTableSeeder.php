@@ -5,6 +5,7 @@ namespace VaahCms\Themes\BtFourPointFour\Database\Seeds;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use VaahCms\Modules\Cms\Entities\ContentType;
 use WebReinvent\VaahCms\Entities\ThemeTemplate;
 
 class DatabaseTableSeeder extends Seeder
@@ -25,6 +26,7 @@ class DatabaseTableSeeder extends Seeder
 
         $this->seedThemeLocations();
         $this->seedTemplates();
+        $this->seedContentTypes();
     }
 
     //---------------------------------------------------------------
@@ -138,7 +140,42 @@ class DatabaseTableSeeder extends Seeder
 
     }
     //---------------------------------------------------------------
+    public function seedContentTypes()
+    {
+        $content_types = $this->getListFromJson("content_types.json");
 
+        foreach ($content_types as $content_type){
+
+            $exist = DB::table('vh_cms_content_types')
+                ->where('slug', $content_type['content']['slug'])
+                ->first();
+
+            $content_type['content']['uuid'] = Str::uuid();
+            $content_type['content']['content_statuses'] = json_encode($content_type['content']['content_statuses']);
+
+            if(!$exist)
+            {
+                $stored = DB::table('vh_cms_content_types')->insert($content_type['content']);
+            } else{
+                $stored = DB::table('vh_cms_content_types')
+                    ->where('slug', $content_type['content']['slug'])
+                    ->update($content_type['content']);
+            }
+
+            $stored = DB::table('vh_cms_content_types')
+                ->where('slug', $content_type['content']['slug'])
+                ->first();
+
+            $stored = ContentType::find($stored->id);
+
+
+            //template groups
+            ContentType::syncWithFormGroups($stored, $content_type['groups']);
+
+
+        }
+
+    }
     //---------------------------------------------------------------
     //---------------------------------------------------------------
     //---------------------------------------------------------------

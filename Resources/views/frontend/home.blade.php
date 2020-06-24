@@ -10,6 +10,47 @@
 @endsection
 
 @section('content')
-<h1>BtFourPointFour - Home</h1>
-<p>This is home page when menu is not created</p>
+
+    <h1 class="my-4">Page Heading
+        <small>Secondary Text</small>
+    </h1>
+
+
+    {!! get_the_content($content->id) !!}
+
+
+    <x-exp></x-exp>
+
+    <?php
+
+    $args = [
+        'content_groups' => [
+            [
+                'slug' => 'default',
+                'fields' => "title, slug, excerpt"
+            ]
+        ],
+        'template_fields' => "action, action-label"
+    ];
+
+    $list = get_contents('blogs', $args);
+
+
+
+    ?>
+
+
+    @foreach($list as $item)
+
+
+        {!! get_content_field($item, 'default', 'title') !!}
+
+
+
+    @endforeach
+
+
+
+
+
 @endsection

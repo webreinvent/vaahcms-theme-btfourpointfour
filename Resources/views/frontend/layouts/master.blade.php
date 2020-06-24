@@ -13,19 +13,33 @@
 
 
     <link rel="stylesheet" href="{{vh_theme_assets_url("BtFourPointFour", "css/bootstrap.min.css")}}">
+    <link rel="stylesheet" href="{{vh_theme_assets_url("BtFourPointFour", "css/site.css")}}">
 
 
     @yield("head")
 
 </head>
 <body>
-<div>
 
-    @yield("content")
+@include("btfourpointfour::frontend.layouts.partials.nav")
+
+<div class="container page-container">
+
+    <div class="row">
+
+        <div class="col-md-8">
+            @yield("content")
+        </div>
+
+        @include("btfourpointfour::frontend.layouts.partials.sidebar")
+
+    </div>
 
 </div>
 
 
+
+@include("btfourpointfour::frontend.layouts.partials.footer")
 
 <script src="{{vh_theme_assets_url("BtFourPointFour", "js/jquery-3.4.1.slim.min.js")}}"></script>
 <script src="{{vh_theme_assets_url("BtFourPointFour", "js/popper.min.js")}}"></script>
