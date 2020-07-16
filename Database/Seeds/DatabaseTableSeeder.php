@@ -90,6 +90,9 @@ class DatabaseTableSeeder extends Seeder
                     ->update($item);
             }
         }
+
+
+
     }
     //---------------------------------------------------------------
     public function seedThemeLocations()
