@@ -21,7 +21,5 @@ $settings = [
     "aside-menu-order"=> null
 ];
 
-$config_data = array_merge($composer_data, $settings);
 
-
-return $config_data;
+return $settings;
