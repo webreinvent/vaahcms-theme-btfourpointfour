@@ -21,5 +21,4 @@ $settings = [
     "aside-menu-order"=> null
 ];
 
-
 return $settings;
