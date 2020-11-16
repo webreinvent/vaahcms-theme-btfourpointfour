@@ -2,8 +2,9 @@
 $composer_data = json_decode(file_get_contents(__DIR__ . '/../composer.json'), true);
 
 $settings = [
-    "title"=> "Bootstrap 4.4 theme",
+    "name"=> "BtFourPointFour",
     "slug"=> "btfourpointfour",
+    "title"=> "Bootstrap 4.4 theme",
     "thumbnail"=> "https://placehold.jp/300x160.png",
     "excerpt"=> "Bootstrap 4.4 theme",
     "description"=> "Bootstrap 4.4 theme",
