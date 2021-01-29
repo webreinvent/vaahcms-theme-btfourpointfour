@@ -21,7 +21,7 @@
 </head>
 <body>
 
-@include("btfourpointfour::frontend.layouts.partials.nav")
+@include("btfourpointfour::frontend.layouts.partials.top")
 
 <div class="container page-container">
 
