@@ -10,6 +10,5 @@
 @endsection
 
 @section('content')
-<h1>BtFourPointFour - Default</h1>
-<p>This is default page</p>
+    {!! get_field($data, 'content') !!}
 @endsection
